@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #main-box {
+            position: relative;
+        }
+
+        img#myroad {
+            position: absolute;
+            width: 100vw;
+            height: 200px;
+        }
+
+        img#mycar {
+            width: 300px;
+            position: absolute;
+            animation: car 10s infinite;
+            animation-timing-function: linear;
+        }
+
+        img#mytyre {
+            position: absolute;
+            width: 43px;
+            margin-top: 69px;
+            margin-left: 47px;
+            animation: tyre 10s infinite;
+            animation-timing-function: linear;
+        }
+
+        img#mytyre1 {
+            position: absolute;
+            width: 43px;
+            margin-top: 69px;
+            margin-left: 219px;
+            animation: tyre 10s infinite;
+            animation-timing-function: linear;
+        }
+
+        span#box-shadow {
+            position: absolute;
+            margin-top: 56px;
+            margin-left: 20px;
+            border: 3px solid red;
+            box-shadow: 1px 1px 25px 10px red;
+            animation: car 10s infinite;
+            animation-timing-function: linear;
+        }
+
+        span#box-shadow1 {
+            position: absolute;
+            margin-top: 67px;
+            margin-left: 268px;
+            border: 3px solid white;
+            box-shadow: 1px 1px 16px 10px white;
+            animation: car 10s infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes car {
+            from {
+                left: 0;
+            }
+            to {
+                left: 100vw;
+            }
+        }
+
+        @keyframes tyre {
+            from {
+                left: 0;
+                transform: rotate(0deg);
+            }
+            to {
+                left: 100vw;
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main-box">
+
+        <img id="myroad" src="myroad.jpg" />
+        <img id="mycar" src="my-car.png" />
+        <img id="mytyre" src="cropped-tyre.png" />
+        <img id="mytyre1" src="cropped-tyre.png" />
+        <span id="box-shadow"></span>
+        <span id="box-shadow1"></span>
+
+    </div>
+
+</body>
+
+</html>
