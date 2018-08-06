@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#main-box {
+    position: relative;
+}
+
+img#myroad {
+    position: absolute;
+    width: 100vw;
+    height: 200px;
+}
+
+img#mycar {
+    width: 300px;
+    position: absolute;
+    animation: car 10s infinite;
+    animation-timing-function: linear;
+}
+
+img#mytyre {
+    position: absolute;
+    width: 43px;
+    margin-top: 69px;
+    margin-left: 47px;
+    animation: tyre 10s infinite;
+    animation-timing-function: linear;
+}
+
+img#mytyre1 {
+    position: absolute;
+    width: 43px;
+    margin-top: 69px;
+    margin-left: 219px;
+    animation: tyre 10s infinite;
+    animation-timing-function: linear;
+}
+
+span#box-shadow {
+    position: absolute;
+    margin-top: 56px;
+    margin-left: 20px;
+    border: 3px solid red;
+    box-shadow: 1px 1px 25px 10px red;
+    animation: car 10s infinite;
+    animation-timing-function: linear;
+}
+
+span#box-shadow1 {
+    position: absolute;
+    margin-top: 67px;
+    margin-left: 268px;
+    border: 3px solid white;
+    box-shadow: 1px 1px 16px 10px white;
+    animation: car 10s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes car {
+    from {
+        left: 0;
+    }
+    to {
+        left: 100vw;
+    }
+}
+
+@keyframes tyre {
+    from {
+        left: 0;
+        transform: rotate(0deg);
+    }
+    to {
+        left: 100vw;
+        transform: rotate(360deg);
+    }
+}
